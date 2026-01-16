@@ -24,6 +24,7 @@ COPY package.json /
 RUN npm config set fetch-retry-maxtimeout 60000 -g
 RUN cd / && npm install
 
+#
 # Stage 3: final slim runtime
 FROM node:18-slim
 
